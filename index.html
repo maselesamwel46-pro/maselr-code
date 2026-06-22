@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lake View Primary School Form</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: Dc143c; /* Orange background */
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #ffcccc;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, #3498db, #1abc9c);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 3px solid #000;
+}
+
+/* Contact Marquee */
+.contact {
+    background: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* Registration Number */
+.reg-number {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.reg-number input {
+    width: 220px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #3498db;
+    outline: none;
+}
+
+/* Form Sections */
+.section {
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #f0f0f0;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1 1 400px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Section Header */
+.card h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+}
+
+/* Inputs and selects */
+input[type="text"], input[type="date"], input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 15px 0;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    font-size: 14px;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, select:focus {
+    border-color: #3498db;
+}
+
+/* Buttons */
+button, input[type="submit"], input[type="button"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #3498db;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background: #1abc9c;
+}
+
+/* Footer Marquee */
+footer {
+    margin-top: 20px;
+}
+
+footer marquee {
+    font-weight: bold;
+    color: #2c3e50;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        LAKE VIEW PRIMARY SCHOOL: STANDARD ONE
+    </div>
+
+    <div class="contact">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            For More Information Contact With Us: 0767676838, 0754336393, 0756463891, 0766104639
+        </marquee>
+    </div>
+
+    <!-- Registration Number -->
+    <div class="reg-number">
+        Registration Number: <input type="text" placeholder="Enter Registration Number">
+    </div>
+
+    <!-- Form Sections -->
+    <div class="section">
+
+        <!-- Student Status Card -->
+        <div class="card">
+            <h3>Student Status</h3>
+            First Name:<br>
+            <input type="text" ><br>
+            Middle Name:<br>
+            <input type="text"><br>
+            Last Name:<br>
+            <input type="text"><br>
+            Nursery School Attended:<br>
+            <select>
+                <option></option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+            Gender:<br>
+            <select>
+                <option></option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            Student Type:<br>
+            <select>
+                <option></option>
+                <option>Day</option>
+                <option>Boarding</option>
+            </select>
+            Date of Birth:<br>
+            <input type="date"><br>
+            Registration Date:<br>
+            <input type="date"><br>
+            Family Status:<br>
+            <select>
+                <option></option>
+                <option>Single Parent</option>
+                <option>Both Parents</option>
+            </select>
+            Street/Village:<br>
+            <input type="text"><br>
+            Nationality:<br>
+            <input type="text" placeholder="Mention your nationality"><br>
+            Number of Birth Certificate:<br>
+            <input type="text"><br>
+            Eye Vision:<br>
+            <select>
+                <option></option>
+                <option>Normal</option>
+                <option>Low Vision</option>
+                <option>Blind</option>
+            </select><br>
+            Physical Impairment:<br>
+            <input type="radio" name="phys"> Mental
+            <input type="radio" name="phys"> Hearing
+            <input type="radio" name="phys"> Physical<br>
+            Distance from Home:<br>
+            <input type="text" placeholder="in km"><br>
+            Environmental Challenges:<br>
+            <input type="checkbox"> River
+            <input type="checkbox"> Forest
+            <input type="checkbox"> Distance<br>
+            Student Presence:<br>
+            <select>
+                <option></option>
+                <option>Present</option>
+                <option>Absent</option>
+            </select>
+        </div>
+
+        <!-- Parent Status Card -->
+        <div class="card">
+            <h3>Parent's Status</h3>
+            First Name:<br>
+            <input type="text"><br>
+            Middle Name:<br>
+            <input type="text"><br>
+            Last Name:<br>
+            <input type="text"><br>
+            Parent/Step Parent:<br>
+            <select>
+                <option></option>
+                <option>Parent</option>
+                <option>Step Parent</option>
+            </select>
+            Relationship:<br>
+            <input type="text"><br>
+            National ID (NIDA):<br>
+            <input type="text"><br>
+            Parent Work:<br>
+            <input type="text"><br>
+            Education Level:<br>
+            <select>
+                <option></option>
+                <option>Standard Seven</option>
+                <option>Form Four</option>
+                <option>Form Six</option>
+                <option>University</option>
+            </select>
+            Phone Number:<br>
+            <input type="text"><br>
+            Email:<br>
+            <input type="email"><br>
+            P.O Box:<br>
+            <input type="text"><br>
+            CO:<br>
+            <input type="text" placeholder="Write postal for receiving letter"><br>
+            Postal Name:<br>
+            <input type="text"><br><br>
+            <input type="submit" value="Submit Application">
+            <input type="button" value="Don't Send">
+        </div>
+
+    </div>
+
+    <p align="center">
+        <a href="https://www.google.com" target="_blank">
+            <button>Homepage</button>
+        </a>
+    </p>
+
+    <footer>
+        <marquee direction="left">This Form Designed By Samwel mahona masele 02.1039.31.03.2025</marquee>
+
+</div>
+
+</body>
+</html>
